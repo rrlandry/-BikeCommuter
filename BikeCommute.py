@@ -4,14 +4,14 @@ import gspread
 from oauth2client.client import SignedJwtAssertionCredentials
 
 # Argument parsing
-parser = argparse.ArgumentParser()
-parser.add_argument("-s", "--show", help="Show the current number of commutes", action="store_true")
-parser.add_argument("-r", "--reset", help="Reset number of commutes to zero", action="store_true")
-parser.add_argument("-w", "--write", help="Write a new value to the number of commutes", type=int)
+parser = argparse.ArgumentParser(description='Increments the "Current Commutes Completed" for the spreadsheet located at https://docs.google.com/spreadsheets/d/1DbbcRTwytdVD9khKGJmea5R1GdH41-4vfiq1I-UHxvs/edit?usp=sharing')
+parser.add_argument("-s", "--show", help="show the current number of commutes completed.", action="store_true")
+parser.add_argument("-r", "--reset", help="reset number of commutes completed to zero.", action="store_true")
+parser.add_argument("-w", "--write", help="write a new value to the number of commutes completed.", type=int)
 args = parser.parse_args()
 
 # Grab credentials and authorize gspread
-json_key = json.load(open('cert.json'))
+json_key = json.load(open('BikeCommuterCert.json'))
 scope = ['https://spreadsheets.google.com/feeds']
 credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'].encode(), scope)
 gc = gspread.authorize(credentials)

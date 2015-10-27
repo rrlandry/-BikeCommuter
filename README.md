@@ -3,7 +3,7 @@ An app that will automagically update my bike commuting spreadsheet.
 
 ### BikeCommute.py
 
-```bash
+```
 usage: BikeCommute.py [-h] [-s] [-r] [-w WRITE]
 
 Increments the "Current Commutes Completed" for the spreadsheet located at

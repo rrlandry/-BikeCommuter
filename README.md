@@ -21,4 +21,4 @@ optional arguments:
 ### cert.json
 This requires my certification file to access my spreadsheet.
 
-(Note to self: `Dropbox/certifications/BikeCommuterCert.json`)
+(Note to self: `Dropbox/Credentials/BikeCommuterCert.json`)

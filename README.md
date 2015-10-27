@@ -1,5 +1,5 @@
 # BikeCommuter
-A script to programatically update my [bike commuting spreadsheet](https://docs.google.com/spreadsheets/d/1DbbcRTwytdVD9khKGJmea5R1GdH41-4vfiq1I-UHxvs/edit?usp=sharing).
+A script to update my [bike commuting spreadsheet](https://docs.google.com/spreadsheets/d/1DbbcRTwytdVD9khKGJmea5R1GdH41-4vfiq1I-UHxvs/edit?usp=sharing).
 
 ### BikeCommute.py
 

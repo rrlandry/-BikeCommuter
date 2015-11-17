@@ -1,3 +1,5 @@
+
+
 import argparse
 import json
 import gspread
@@ -11,7 +13,7 @@ parser.add_argument("-w", "--write", help="write a new value to the number of co
 args = parser.parse_args()
 
 # Grab credentials and authorize gspread
-json_key = json.load(open('BikeCommuterCert.json'))
+json_key = json.load(open('/home/zfleischman/repos/BikeCommuter/BikeCommuterCert.json'))
 scope = ['https://spreadsheets.google.com/feeds']
 credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'].encode(), scope)
 gc = gspread.authorize(credentials)

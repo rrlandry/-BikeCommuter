@@ -17,8 +17,3 @@ optional arguments:
   -w WRITE, --write WRITE
                         write a new value to the number of commutes completed.
 ```
-
-### cert.json
-This requires my certification file to access my spreadsheet.
-
-(Note to self: `Dropbox/Credentials/BikeCommuterCert.json`)
